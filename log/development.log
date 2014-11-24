@@ -3680,3 +3680,1359 @@ Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-24 14:49:16 +0
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 14:49:16 +0100
+  [1m[36m (259.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (153.5ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to SorceryCore (20141124135528)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.2ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) NOT NULL, "crypted_password" varchar(255) NOT NULL, "salt" varchar(255) NOT NULL, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (94.9ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141124135528"]]
+  [1m[36m (416.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-11-24 15:04:39 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 35ms
+
+NoMethodError (undefined method `authenticates_with_sorcery!' for #<Class:0xaaac0e4>):
+  app/models/user.rb:2:in `<class:User>'
+  app/models/user.rb:1:in `<top (required)>'
+  app/controllers/users_controller.rb:3:in `new'
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.8ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (83.1ms)
+
+
+Started GET "/signup/new" for 127.0.0.1 at 2014-11-24 15:05:07 +0100
+
+ActionController::RoutingError (No route matches [GET] "/signup/new"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.8ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.9ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (262.0ms)
+
+
+Started GET "/parents/signup" for 127.0.0.1 at 2014-11-24 15:08:12 +0100
+
+ActionController::RoutingError (No route matches [GET] "/parents/signup"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (68.5ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.4ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (142.1ms)
+
+
+Started GET "/parents/signup" for 127.0.0.1 at 2014-11-24 15:08:48 +0100
+
+ActionController::RoutingError (No route matches [GET] "/parents/signup"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (29.0ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (61.6ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-11-24 15:08:58 +0100
+
+AbstractController::ActionNotFound (The action 'parents' could not be found for UsersController):
+  actionpack (4.1.7) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.7) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.7) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.7) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.7) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.7) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.7) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (40.2ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-11-24 15:09:11 +0100
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 6ms
+
+NoMethodError (undefined method `authenticates_with_sorcery!' for #<Class:0xb119440>):
+  app/models/user.rb:2:in `<class:User>'
+  app/models/user.rb:1:in `<top (required)>'
+  app/controllers/users_controller.rb:3:in `new'
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.4ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (32.9ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-11-24 15:11:15 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 167ms
+
+NoMethodError (undefined method `attr_accessible' for #<Class:0xb637a3c8>):
+  app/models/user.rb:3:in `<class:User>'
+  app/models/user.rb:1:in `<top (required)>'
+  app/controllers/users_controller.rb:3:in `new'
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.4ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (40.8ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-11-24 15:14:29 +0100
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 6ms
+
+NoMethodError (undefined method `attr_accessible' for #<Class:0xc2f2310>):
+  app/models/user.rb:3:in `<class:User>'
+  app/models/user.rb:1:in `<top (required)>'
+  app/controllers/users_controller.rb:3:in `new'
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.7ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (32.5ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-11-24 15:19:12 +0100
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 8ms
+
+ActionView::MissingTemplate (Missing template users/new, application/new with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/apprenti/Bureau/busonrails/app/views"
+):
+  actionview (4.1.7) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.7) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.7) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.7) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.7) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.7) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.7) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.7) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.7) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.7) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.7) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.7) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.7) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.7) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.7) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.7) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.7) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.7) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.7) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.7) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.7) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.7) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.7) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.7) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.7) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.7) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.7) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.7) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.7) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.7) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (1.5ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-11-24 15:20:18 +0100
+
+AbstractController::ActionNotFound (The action 'new' could not be found for ParentsController):
+  actionpack (4.1.7) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.7) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.7) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.7) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.7) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.7) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.7) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.8ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-11-24 15:21:47 +0100
+Processing by ParentsController#new as HTML
+Completed 500 Internal Server Error in 3ms
+
+ActionView::MissingTemplate (Missing template parents/new, application/new with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/apprenti/Bureau/busonrails/app/views"
+):
+  actionview (4.1.7) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.7) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.7) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.7) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.7) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.7) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.7) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.7) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.7) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.7) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.7) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.7) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.7) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.7) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.7) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.7) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.7) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.7) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.7) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.7) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.7) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.7) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.7) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.7) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.7) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.7) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.7) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.7) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.7) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.7) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.8ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-11-24 15:22:05 +0100
+
+AbstractController::ActionNotFound (The action 'signup' could not be found for ParentsController):
+  actionpack (4.1.7) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.7) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.7) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.7) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.7) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.7) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.7) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.9ms)
+
+
+Started GET "/parents/signup" for 127.0.0.1 at 2014-11-24 15:22:25 +0100
+
+ActionController::RoutingError (No route matches [GET] "/parents/signup"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (106.7ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (171.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-11-24 15:23:00 +0100
+
+ActionController::RoutingError (uninitialized constant SignupController):
+  activesupport (4.1.7) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.7) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.7) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.7) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.7) lib/active_support/inflector/methods.rb:236:in `constantize'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:46:in `call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.7) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.7) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (35.5ms)
+
+
+Started GET "/parents/signup" for 127.0.0.1 at 2014-11-24 15:23:16 +0100
+
+ActionController::RoutingError (No route matches [GET] "/parents/signup"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (34.1ms)
+
+
+Started GET "/parents/signup" for 127.0.0.1 at 2014-11-24 15:25:51 +0100
+
+ActionController::RoutingError (No route matches [GET] "/parents/signup"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (34.8ms)
+
+
+Started GET "/parents" for 127.0.0.1 at 2014-11-24 15:26:08 +0100
+Processing by ParentsController#parents as HTML
+  Rendered parents/parents.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 506ms (Views: 504.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-24 15:26:09 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-24 15:26:09 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-24 15:26:09 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 15:26:09 +0100
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-24 15:26:09 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 15:26:09 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 15:26:09 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-24 15:26:09 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-24 15:26:09 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-24 15:26:09 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 15:26:09 +0100
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-11-24 15:29:35 +0100
+
+AbstractController::ActionNotFound (The action 'parents' could not be found for UsersController):
+  actionpack (4.1.7) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.7) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.7) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.7) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.7) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.7) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.7) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (1.1ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-11-24 15:30:10 +0100
+
+ActionController::RoutingError (uninitialized constant SignupController):
+  activesupport (4.1.7) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.7) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.7) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.7) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.7) lib/active_support/inflector/methods.rb:236:in `constantize'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:46:in `call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.7) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.7) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.4ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (37.1ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-11-24 15:30:32 +0100
+
+AbstractController::ActionNotFound (The action 'signup' could not be found for UsersController):
+  actionpack (4.1.7) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.7) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.7) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.7) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.7) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.7) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.7) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (1.2ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-11-24 15:30:52 +0100
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 8ms
+
+ActionView::MissingTemplate (Missing template users/new, application/new with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/apprenti/Bureau/busonrails/app/views"
+):
+  actionview (4.1.7) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.7) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.7) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.7) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.7) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.7) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.7) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.7) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.7) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.7) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.7) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.7) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.7) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.7) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.7) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.7) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.7) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.7) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.7) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.7) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.7) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.7) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.7) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.7) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.7) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.7) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.7) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.7) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.7) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.7) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.9ms)
+
+
+Started GET "/signup/new" for 127.0.0.1 at 2014-11-24 15:31:20 +0100
+
+ActionController::RoutingError (No route matches [GET] "/signup/new"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (36.2ms)
+
+
+Started GET "/signup/new" for 127.0.0.1 at 2014-11-24 15:33:48 +0100
+
+ActionController::RoutingError (No route matches [GET] "/signup/new"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (47.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-11-24 15:33:55 +0100
+Processing by UsersController#signup as HTML
+  Rendered users/signup.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 157ms (Views: 155.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-11-24 15:33:55 +0100
+Processing by UsersController#signup as HTML
+  Rendered users/signup.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 118ms (Views: 117.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-24 15:33:55 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 15:33:55 +0100
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-24 15:33:55 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 15:33:55 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-24 15:33:55 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 15:33:55 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-24 15:33:55 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-24 15:33:55 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-24 15:33:55 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-24 15:33:55 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 15:33:55 +0100
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-11-24 15:34:23 +0100
+
+AbstractController::ActionNotFound (The action 'signup' could not be found for UsersController):
+  actionpack (4.1.7) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.7) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.7) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.7) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.7) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.7) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.7) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (1.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-11-24 15:34:41 +0100
+
+ActionController::RoutingError (uninitialized constant SignupController):
+  activesupport (4.1.7) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.7) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.7) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.7) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.7) lib/active_support/inflector/methods.rb:236:in `constantize'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:46:in `call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.7) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.7) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (37.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-11-24 15:35:45 +0100
+Processing by UsersController#users as HTML
+  Rendered users/users.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 116ms (Views: 114.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-24 15:35:45 +0100
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-24 15:35:45 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-24 15:35:45 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 15:35:45 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 15:35:45 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-24 15:35:45 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 15:35:45 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-24 15:35:45 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-24 15:35:45 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-24 15:35:45 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 15:35:45 +0100
