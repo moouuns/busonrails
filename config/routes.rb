@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   get 'enfants' => 'enfants'
 
-  get 'signup' => 'users#users', :as => 'signup'
+  get 'parents/register' => 'users#register', :as => 'signup'
 
 
 
