@@ -5038,6 +5038,7 @@ Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-24 15:35:45 +0
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 15:35:45 +0100
 
 
+<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2014-11-24 15:43:53 +0100
 Processing by BusController#index as HTML
   Rendered bus/index.html.erb within layouts/application (38.2ms)
@@ -6784,3 +6785,1679 @@ ActionController::RoutingError (No route matches [POST] "/parents/register"):
   Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
   Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.6ms)
   Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (34.7ms)
+=======
+Started GET "/" for 127.0.0.1 at 2014-11-24 16:01:59 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (10.9ms)
+Completed 500 Internal Server Error in 60ms
+
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>""}):
+    1: <%= link_to image_tag("bus.jpg"),:controller =>'/' %>
+    2: 
+    3: 
+    4: <center><h1>Transport scolaire!</h1></center>
+  app/views/bus/index.html.erb:1:in `_app_views_bus_index_html_erb__536498636_98940310'
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (25.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 16:03:19 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>""}):
+    1: <%= link_to image_tag("bus.jpg"), :action =>'index', :controller =>'/' %>
+    2: 
+    3: 
+    4: <center><h1>Transport scolaire!</h1></center>
+  app/views/bus/index.html.erb:1:in `_app_views_bus_index_html_erb__536498636_97802940'
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (22.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 16:03:20 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>""}):
+    1: <%= link_to image_tag("bus.jpg"), :action =>'index', :controller =>'/' %>
+    2: 
+    3: 
+    4: <center><h1>Transport scolaire!</h1></center>
+  app/views/bus/index.html.erb:1:in `_app_views_bus_index_html_erb__536498636_97802940'
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (22.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 16:04:08 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"welcome"}):
+    1: <%= link_to image_tag("bus.jpg"), :action =>'index', :controller =>'welcome' %>
+    2: 
+    3: 
+    4: <center><h1>Transport scolaire!</h1></center>
+  app/views/bus/index.html.erb:1:in `_app_views_bus_index_html_erb__536498636_96642020'
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (22.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 16:08:34 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 406ms (Views: 405.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-24 16:08:34 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-24 16:08:34 +0100
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-24 16:08:34 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 16:08:34 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 16:08:34 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-24 16:08:34 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 16:08:34 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-24 16:08:34 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-24 16:08:34 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-24 16:08:34 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 16:08:34 +0100
+
+
+Started GET "/assets/bus.jpg" for 127.0.0.1 at 2014-11-24 16:08:35 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 16:08:37 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 132ms (Views: 131.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 16:08:38 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 129ms (Views: 128.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 16:08:39 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 138ms (Views: 137.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 16:08:39 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 123ms (Views: 122.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 16:08:40 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 130ms (Views: 129.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 16:08:40 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 122ms (Views: 120.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 16:08:41 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 128ms (Views: 127.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 16:08:41 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 127ms (Views: 126.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 16:08:42 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 128ms (Views: 127.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 16:08:42 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 147ms (Views: 145.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 16:08:47 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 141ms (Views: 140.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-24 16:08:47 +0100
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-24 16:08:47 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-24 16:08:47 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 16:08:47 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 16:08:47 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-24 16:08:47 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 16:08:47 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-24 16:08:47 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-24 16:08:47 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-24 16:08:47 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 16:08:47 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 16:11:32 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 6ms
+
+SyntaxError (/home/apprenti/Bureau/bus/busonrails/app/views/bus/index.html.erb:1: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ge_tag("bus.jpg", :width=> 50px, :height =>50px ), :action =...
+...                               ^
+/home/apprenti/Bureau/bus/busonrails/app/views/bus/index.html.erb:1: syntax error, unexpected =>, expecting :: or '[' or '.'
+...jpg", :width=> 50px, :height =>50px ), :action =>'index', :c...
+...                               ^
+/home/apprenti/Bureau/bus/busonrails/app/views/bus/index.html.erb:1: syntax error, unexpected =>, expecting keyword_end
+...x, :height =>50px ), :action =>'index', :controller =>'bus')...
+...                               ^
+/home/apprenti/Bureau/bus/busonrails/app/views/bus/index.html.erb:1: syntax error, unexpected ',', expecting keyword_end
+...ht =>50px ), :action =>'index', :controller =>'bus');@output...
+...                               ^
+/home/apprenti/Bureau/bus/busonrails/app/views/bus/index.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+...=>'index', :controller =>'bus');@output_buffer.safe_append='
+...                               ^):
+  app/views/bus/index.html.erb:1: syntax error, unexpected tIDENTIFIER, expecting ')'
+  app/views/bus/index.html.erb:1: syntax error, unexpected =>, expecting :: or '[' or '.'
+  app/views/bus/index.html.erb:1: syntax error, unexpected =>, expecting keyword_end
+  app/views/bus/index.html.erb:1: syntax error, unexpected ',', expecting keyword_end
+  app/views/bus/index.html.erb:1: syntax error, unexpected ')', expecting keyword_end
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.5ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (34.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 16:11:58 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 164ms (Views: 162.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-24 16:11:58 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-24 16:11:58 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-24 16:11:58 +0100
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-24 16:11:58 +0100
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-24 16:11:58 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-24 16:11:58 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 16:11:58 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 16:11:58 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 16:11:58 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 16:11:58 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-24 16:11:58 +0100
+
+
+Started GET "/assets/bus.jpg" for 127.0.0.1 at 2014-11-24 16:11:58 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 16:12:05 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 137ms (Views: 136.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 16:12:26 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 127ms (Views: 125.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-24 16:12:26 +0100
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-24 16:12:26 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 16:12:26 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 16:12:26 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 16:12:26 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-24 16:12:26 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-24 16:12:26 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-24 16:12:26 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-24 16:12:26 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-24 16:12:26 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 16:12:26 +0100
+
+
+Started GET "/assets/bus.jpg" for 127.0.0.1 at 2014-11-24 16:12:26 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 16:26:51 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (31.4ms)
+Completed 500 Internal Server Error in 35ms
+
+ActionView::Template::Error (undefined local variable or method `enfants' for #<#<Class:0xbce6ef8>:0x9dfa4cc>):
+    1: <%= link_to image_tag("bus.jpg", :width=> 70, :height =>70 ), :action =>'index', :controller =>'bus'%>
+    2: <%= link_to 'enfants', {:controller => enfants}  %></td>
+    3: 
+    4: <center><h1>Transport scolaire!</h1></center>
+    5: <center><h4>Année 2014-2015</h4></center>
+  app/views/bus/index.html.erb:2:in `_app_views_bus_index_html_erb__536498636_82647960'
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (23.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 16:27:32 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 129ms (Views: 128.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-24 16:27:32 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-24 16:27:32 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-24 16:27:32 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 16:27:32 +0100
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-24 16:27:32 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 16:27:32 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-24 16:27:32 +0100
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-24 16:27:32 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 16:27:32 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-24 16:27:32 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 16:27:32 +0100
+
+
+Started GET "/assets/bus.jpg" for 127.0.0.1 at 2014-11-24 16:27:32 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 16:27:35 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 139ms (Views: 138.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 16:28:04 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 6ms
+
+SyntaxError (/home/apprenti/Bureau/bus/busonrails/app/views/bus/index.html.erb:2: syntax error, unexpected tCONSTANT, expecting ')'
+...er.append=( link_to 'enfants'Se connecter  );@output_buffer....
+...                               ^):
+  app/views/bus/index.html.erb:2: syntax error, unexpected tCONSTANT, expecting ')'
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.6ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 16:28:21 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 5ms
+
+SyntaxError (/home/apprenti/Bureau/bus/busonrails/app/views/bus/index.html.erb:2: syntax error, unexpected tCONSTANT, expecting ')'
+...er.append=( link_to 'enfants'Se connecter  );@output_buffer....
+...                               ^):
+  app/views/bus/index.html.erb:2: syntax error, unexpected tCONSTANT, expecting ')'
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 16:28:42 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 136ms (Views: 134.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-24 16:28:42 +0100
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-24 16:28:42 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 16:28:42 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 16:28:42 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-24 16:28:42 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 16:28:42 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-24 16:28:42 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-24 16:28:42 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 16:28:42 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-24 16:28:42 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-24 16:28:42 +0100
+
+
+Started GET "/assets/bus.jpg" for 127.0.0.1 at 2014-11-24 16:28:42 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 16:30:21 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 122ms (Views: 121.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 16:30:23 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 139ms (Views: 138.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 16:33:35 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"enfants"}):
+    1: <%= link_to image_tag("bus.jpg", :width=> 70, :height =>70 ), :action =>'index', :controller =>'bus'%>
+    2: <%= link_to 'enfants' ,controller: "enfants" %>
+    3: 
+    4: <center><h1>Transport scolaire!</h1></center>
+    5: <center><h4>Année 2014-2015</h4></center>
+  app/views/bus/index.html.erb:2:in `_app_views_bus_index_html_erb__536498636_98449030'
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (22.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 16:34:20 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 126ms (Views: 125.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-24 16:34:21 +0100
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-24 16:34:21 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 16:34:21 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-24 16:34:21 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-24 16:34:21 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 16:34:21 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-24 16:34:21 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-24 16:34:21 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 16:34:21 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-24 16:34:21 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 16:34:21 +0100
+
+
+Started GET "/assets/bus.jpg" for 127.0.0.1 at 2014-11-24 16:34:21 +0100
+
+
+Started GET "/enfants" for 127.0.0.1 at 2014-11-24 16:34:23 +0100
+Processing by EnfantsController#enfants as HTML
+  Rendered enfants/enfants.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 123ms (Views: 122.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 16:38:14 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 134ms (Views: 133.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-24 16:38:14 +0100
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-24 16:38:14 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-24 16:38:14 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 16:38:14 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 16:38:14 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-24 16:38:14 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-24 16:38:14 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 16:38:14 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-24 16:38:14 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-24 16:38:14 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 16:38:14 +0100
+
+
+Started GET "/assets/bus.jpg" for 127.0.0.1 at 2014-11-24 16:38:14 +0100
+
+
+Started GET "/enfants" for 127.0.0.1 at 2014-11-24 16:38:19 +0100
+Processing by EnfantsController#enfants as HTML
+  Rendered enfants/enfants.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 121ms (Views: 119.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 16:39:51 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 136ms (Views: 135.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-24 16:39:51 +0100
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-24 16:39:51 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-24 16:39:51 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 16:39:51 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 16:39:51 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 16:39:51 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-24 16:39:51 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-24 16:39:51 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-24 16:39:51 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-24 16:39:51 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 16:39:51 +0100
+
+
+Started GET "/assets/bus.jpg" for 127.0.0.1 at 2014-11-24 16:39:52 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 16:43:12 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 125ms (Views: 124.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-24 16:43:12 +0100
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-24 16:43:12 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-24 16:43:12 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 16:43:12 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 16:43:12 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-24 16:43:12 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 16:43:12 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-24 16:43:12 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 16:43:12 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-24 16:43:12 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-24 16:43:12 +0100
+
+
+Started GET "/assets/bus.jpg" for 127.0.0.1 at 2014-11-24 16:43:12 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 16:44:18 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 125ms (Views: 123.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-24 16:44:18 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-24 16:44:18 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-24 16:44:18 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 16:44:18 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 16:44:18 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 16:44:18 +0100
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-24 16:44:18 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-24 16:44:18 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-24 16:44:18 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-24 16:44:18 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 16:44:18 +0100
+
+
+Started GET "/assets/bus.jpg" for 127.0.0.1 at 2014-11-24 16:44:19 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 16:44:20 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 134ms (Views: 133.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-24 16:44:20 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 16:44:20 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-24 16:44:20 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 16:44:20 +0100
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-24 16:44:20 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-24 16:44:20 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-24 16:44:20 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 16:44:20 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-24 16:44:20 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-24 16:44:20 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 16:44:20 +0100
+
+
+Started GET "/assets/bus.jpg" for 127.0.0.1 at 2014-11-24 16:44:20 +0100
+
+
+Started GET "/enfants" for 127.0.0.1 at 2014-11-24 16:46:00 +0100
+Processing by EnfantsController#enfants as HTML
+  Rendered enfants/enfants.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 123ms (Views: 122.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 16:50:37 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 173ms (Views: 172.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-24 16:50:37 +0100
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-24 16:50:37 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-24 16:50:37 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 16:50:37 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 16:50:37 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 16:50:37 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-24 16:50:37 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-24 16:50:37 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-24 16:50:37 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-24 16:50:37 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 16:50:37 +0100
+
+
+Started GET "/assets/bus.jpg" for 127.0.0.1 at 2014-11-24 16:50:37 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 16:56:26 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 135ms (Views: 134.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-24 16:56:26 +0100
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-24 16:56:26 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-24 16:56:26 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 16:56:26 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 16:56:26 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 16:56:26 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-24 16:56:26 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-24 16:56:26 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-24 16:56:26 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-24 16:56:26 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 16:56:26 +0100
+
+
+Started GET "/assets/bus.jpg" for 127.0.0.1 at 2014-11-24 16:56:26 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 16:56:27 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 123ms (Views: 122.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-24 16:56:28 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 16:56:28 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 16:56:28 +0100
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-24 16:56:28 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 16:56:28 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-24 16:56:28 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-24 16:56:28 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-24 16:56:28 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-24 16:56:28 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 16:56:28 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-24 16:56:28 +0100
+
+
+Started GET "/assets/bus.jpg" for 127.0.0.1 at 2014-11-24 16:56:28 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 16:56:29 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 132ms (Views: 131.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-24 16:56:29 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-24 16:56:29 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-24 16:56:29 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 16:56:29 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 16:56:29 +0100
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-24 16:56:29 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 16:56:29 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-24 16:56:29 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-24 16:56:29 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 16:56:29 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-24 16:56:29 +0100
+
+
+Started GET "/assets/bus.jpg" for 127.0.0.1 at 2014-11-24 16:56:29 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 16:59:49 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (5.7ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (No route matches {:action=>"users", :controller=>"enfants"}):
+    13: 		</tr>
+    14: 	</table></center>
+    15: 
+    16: <%= link_to 'se connecter' ,controller: "enfants",action:"users" %>	
+    17: </div>
+  app/views/bus/index.html.erb:16:in `_app_views_bus_index_html_erb__536498636_98894380'
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (23.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 17:00:52 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 131ms (Views: 130.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-24 17:00:52 +0100
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-24 17:00:52 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-24 17:00:52 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 17:00:52 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-24 17:00:52 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 17:00:52 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 17:00:52 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-24 17:00:52 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 17:00:52 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-24 17:00:52 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-24 17:00:52 +0100
+
+
+Started GET "/assets/bus.jpg" for 127.0.0.1 at 2014-11-24 17:00:52 +0100
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-11-24 17:00:57 +0100
+Processing by UsersController#users as HTML
+  Rendered users/users.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 135ms (Views: 134.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 17:04:17 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (6.5ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (No route matches {:action=>"users", :controller=>"bus"}):
+    13: 		</tr>
+    14: 	</table></center>
+    15: 
+    16: <%= link_to 'enfants' ,controller: "users",action:"users" %><%= button_to "users", action: "users" %>
+    17: </div>
+  app/views/bus/index.html.erb:16:in `_app_views_bus_index_html_erb__536498636_97930870'
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (23.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 17:06:19 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (4.6ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (No route matches {:action=>"users", :controller=>"bus"}):
+    14: 	</table></center>
+    15: 
+    16: <%= link_to 'enfants' ,controller: "users",action:"users" %>
+    17: <%= button_to "enfants", action: "users" %>
+    18: </div>
+  app/views/bus/index.html.erb:17:in `_app_views_bus_index_html_erb__536498636_97135490'
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (22.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 17:06:21 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (No route matches {:action=>"users", :controller=>"bus"}):
+    14: 	</table></center>
+    15: 
+    16: <%= link_to 'enfants' ,controller: "users",action:"users" %>
+    17: <%= button_to "enfants", action: "users" %>
+    18: </div>
+  app/views/bus/index.html.erb:17:in `_app_views_bus_index_html_erb__536498636_97135490'
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (23.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 17:06:33 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 150ms (Views: 149.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-24 17:06:33 +0100
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-24 17:06:33 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-24 17:06:33 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 17:06:33 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 17:06:33 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 17:06:33 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-24 17:06:33 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-24 17:06:33 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-24 17:06:33 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 17:06:33 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-24 17:06:33 +0100
+
+
+Started GET "/assets/bus.jpg" for 127.0.0.1 at 2014-11-24 17:06:33 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 17:07:19 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 128ms (Views: 126.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 17:07:19 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 17:07:19 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 17:07:19 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-24 17:07:19 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-24 17:07:19 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 17:07:19 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-24 17:07:19 +0100
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-24 17:07:19 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-24 17:07:19 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-24 17:07:19 +0100
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-24 17:07:19 +0100
+
+
+Started GET "/assets/bus.jpg" for 127.0.0.1 at 2014-11-24 17:07:20 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 17:07:21 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 134ms (Views: 132.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-24 17:07:21 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-24 17:07:21 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 17:07:21 +0100
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-24 17:07:21 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 17:07:21 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 17:07:21 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-24 17:07:21 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-24 17:07:21 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-24 17:07:21 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-24 17:07:21 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 17:07:21 +0100
+
+
+Started GET "/assets/bus.jpg" for 127.0.0.1 at 2014-11-24 17:07:21 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 17:07:22 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 129ms (Views: 128.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-24 17:07:22 +0100
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-24 17:07:22 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 17:07:22 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-24 17:07:22 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 17:07:22 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 17:07:22 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-24 17:07:22 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-24 17:07:22 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-24 17:07:22 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-24 17:07:22 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 17:07:22 +0100
+
+
+Started GET "/assets/bus.jpg" for 127.0.0.1 at 2014-11-24 17:07:22 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 17:08:11 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 137ms (Views: 135.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-24 17:08:11 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 17:08:11 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-24 17:08:11 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 17:08:11 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-24 17:08:11 +0100
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-24 17:08:11 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 17:08:11 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-24 17:08:11 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-24 17:08:11 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-24 17:08:11 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 17:08:11 +0100
+
+
+Started GET "/assets/bus.jpg" for 127.0.0.1 at 2014-11-24 17:08:11 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 17:08:48 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 129ms (Views: 127.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-24 17:08:49 +0100
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-24 17:08:49 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 17:08:49 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-24 17:08:49 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 17:08:49 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-24 17:08:49 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 17:08:49 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-24 17:08:49 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-24 17:08:49 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-24 17:08:49 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 17:08:49 +0100
+
+
+Started GET "/assets/bus.jpg" for 127.0.0.1 at 2014-11-24 17:08:49 +0100
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-11-24 17:10:17 +0100
+Processing by UsersController#users as HTML
+  Rendered users/users.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 125ms (Views: 124.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 17:13:51 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 163ms (Views: 162.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/enfants" for 127.0.0.1 at 2014-11-24 17:13:53 +0100
+Processing by EnfantsController#enfants as HTML
+  Rendered enfants/enfants.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 132ms (Views: 131.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 17:13:57 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 130ms (Views: 129.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 17:21:23 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (7.2ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (No route matches {:action=>"parents", :controller=>"bus"}):
+    14: 	
+    15: 
+    16: <%= link_to 'enfants' ,controller: "users",action:"users" %>
+    17: <%= button_to "Parents", { action: "parents" } %>
+    18: </div>
+  app/views/bus/index.html.erb:17:in `_app_views_bus_index_html_erb__536498636_89758140'
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (46.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 17:21:53 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (5.1ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (No route matches {:action=>"bus", :controller=>"bus"}):
+    14: 	
+    15: 
+    16: <%= link_to 'enfants' ,controller: "users",action:"users" %>
+    17: <%= button_to "Parents", { action: "bus" } %>
+    18: </div>
+  app/views/bus/index.html.erb:17:in `_app_views_bus_index_html_erb__536498636_82900400'
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (23.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 17:22:08 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (4.6ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (No route matches {:action=>"bus", :controller=>"bus"}):
+    14: 	
+    15: 
+    16: <%= link_to 'enfants' ,controller: "users",action:"users" %>
+    17: <%= button_to "bus", { action: "bus" } %>
+    18: </div>
+  app/views/bus/index.html.erb:17:in `_app_views_bus_index_html_erb__536498636_99276690'
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (23.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 17:22:51 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 151ms (Views: 149.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-24 17:22:51 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-24 17:22:51 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 17:22:51 +0100
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-24 17:22:51 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-24 17:22:51 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-24 17:22:51 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 17:22:51 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 17:22:51 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-24 17:22:51 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-24 17:22:51 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 17:22:51 +0100
+
+
+Started GET "/assets/bus.jpg" for 127.0.0.1 at 2014-11-24 17:22:51 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 17:23:36 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 142ms (Views: 141.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-24 17:23:36 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-24 17:23:36 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-24 17:23:36 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 17:23:36 +0100
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-24 17:23:36 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-24 17:23:36 +0100
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-24 17:23:36 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 17:23:36 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-24 17:23:36 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 17:23:36 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 17:23:36 +0100
+
+
+Started GET "/assets/bus.jpg" for 127.0.0.1 at 2014-11-24 17:23:36 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 17:23:57 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 130ms (Views: 129.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 17:23:57 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-24 17:23:57 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-24 17:23:57 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-24 17:23:57 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-24 17:23:57 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 17:23:57 +0100
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-24 17:23:57 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-24 17:23:57 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 17:23:57 +0100
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-24 17:23:57 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 17:23:57 +0100
+
+
+Started GET "/assets/bus.jpg" for 127.0.0.1 at 2014-11-24 17:23:57 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 17:24:20 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 140ms (Views: 138.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 17:24:20 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 17:24:20 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-24 17:24:20 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-24 17:24:20 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 17:24:20 +0100
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-24 17:24:20 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-24 17:24:20 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-24 17:24:20 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-24 17:24:20 +0100
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-24 17:24:20 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 17:24:20 +0100
+
+
+Started GET "/assets/bus.jpg" for 127.0.0.1 at 2014-11-24 17:24:20 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 17:24:40 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 139ms (Views: 137.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 17:24:41 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 17:24:41 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-24 17:24:41 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-24 17:24:41 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-24 17:24:41 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 17:24:41 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-24 17:24:41 +0100
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-24 17:24:41 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-24 17:24:41 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 17:24:41 +0100
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-24 17:24:41 +0100
+
+
+Started GET "/assets/bus.jpg" for 127.0.0.1 at 2014-11-24 17:24:41 +0100
+
+
+Started GET "/enfants" for 127.0.0.1 at 2014-11-24 17:24:51 +0100
+Processing by EnfantsController#enfants as HTML
+  Rendered enfants/enfants.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 142ms (Views: 141.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-11-24 17:24:57 +0100
+Processing by UsersController#users as HTML
+  Rendered users/users.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 145ms (Views: 143.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-24 17:26:56 +0100
+Processing by BusController#index as HTML
+  Rendered bus/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 131ms (Views: 130.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-24 17:26:56 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-24 17:26:56 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-24 17:26:56 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-24 17:26:56 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-24 17:26:56 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-24 17:26:56 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-24 17:26:56 +0100
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-24 17:26:56 +0100
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-24 17:26:56 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-24 17:26:56 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-24 17:26:56 +0100
+
+
+Started GET "/assets/bus.jpg" for 127.0.0.1 at 2014-11-24 17:26:56 +0100
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-11-24 17:26:58 +0100
+Processing by UsersController#users as HTML
+  Rendered users/users.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 138ms (Views: 136.3ms | ActiveRecord: 0.0ms)
+>>>>>>> 5ebf3ed8d5f9d3298a63b08bfb772d287cc73591
