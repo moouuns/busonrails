@@ -17262,3 +17262,981 @@ Processing by UsersController#new as HTML
   Rendered users/_form.html.erb (4.9ms)
   Rendered users/new.html.erb within layouts/application (6.6ms)
 Completed 200 OK in 189ms (Views: 187.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-11-26 15:21:59 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (116.0ms)
+  Rendered users/new.html.erb within layouts/application (128.7ms)
+Completed 200 OK in 616ms (Views: 508.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-26 15:21:59 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-26 15:21:59 +0100
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-26 15:21:59 +0100
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2014-11-26 15:21:59 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-26 15:21:59 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-26 15:21:59 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-26 15:21:59 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-26 15:21:59 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-26 15:21:59 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-26 15:22:00 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-26 15:22:00 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-26 15:22:00 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-26 15:22:00 +0100
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2014-11-26 15:22:00 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-26 15:22:00 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-26 15:22:00 +0100
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-11-26 15:22:55 +0100
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (4.2ms)
+  Rendered users/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 187ms (Views: 185.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-26 15:22:55 +0100
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-26 15:22:55 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-26 15:22:55 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-26 15:22:55 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-26 15:22:55 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-26 15:22:55 +0100
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2014-11-26 15:22:55 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-26 15:22:55 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-26 15:22:55 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-26 15:22:55 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-26 15:22:55 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-26 15:22:55 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-26 15:22:55 +0100
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2014-11-26 15:22:55 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-26 15:22:55 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-26 15:22:55 +0100
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-11-26 15:23:11 +0100
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (1.8ms)
+  Rendered users/new.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 7ms
+
+SyntaxError (/home/apprenti/Bureau/busonrails/app/views/users/_form.html.erb:27: syntax error, unexpected ')', expecting :: or '[' or '.'
+....append=( f.submit, "Envoyer" );@output_buffer.safe_append='
+...                               ^
+/home/apprenti/Bureau/busonrails/app/views/users/_form.html.erb:29: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+/home/apprenti/Bureau/busonrails/app/views/users/_form.html.erb:31: syntax error, unexpected keyword_ensure, expecting ')'
+/home/apprenti/Bureau/busonrails/app/views/users/_form.html.erb:33: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/users/_form.html.erb:27: syntax error, unexpected ')', expecting :: or '[' or '.'
+  app/views/users/_form.html.erb:29: syntax error, unexpected keyword_end, expecting ')'
+  app/views/users/_form.html.erb:31: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/users/_form.html.erb:33: syntax error, unexpected keyword_end, expecting ')'
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb__1070957803_102615660'
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.5ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (32.6ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-11-26 15:23:16 +0100
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (4.4ms)
+  Rendered users/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 186ms (Views: 184.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-26 15:23:17 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-26 15:23:17 +0100
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2014-11-26 15:23:17 +0100
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-26 15:23:17 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-26 15:23:17 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-26 15:23:17 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-26 15:23:17 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-26 15:23:17 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-26 15:23:17 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-26 15:23:17 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-26 15:23:17 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-26 15:23:17 +0100
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2014-11-26 15:23:17 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-26 15:23:17 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-26 15:23:17 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-26 15:23:17 +0100
+
+
+Started POST "/users" for 127.0.0.1 at 2014-11-26 15:24:30 +0100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9XZ+AJ4Jw5Sz+qA0e4fA5ph6BHQHltHHAm6ivUXbynY=", "user"=>{"email"=>"remy.peyre05@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Envoyer"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'remy.peyre05@gmail.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  Rendered users/_form.html.erb (4.2ms)
+  Rendered users/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 350ms (Views: 179.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-26 15:24:31 +0100
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-26 15:24:31 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-26 15:24:31 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-26 15:24:31 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-26 15:24:31 +0100
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2014-11-26 15:24:31 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-26 15:24:31 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-26 15:24:31 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-26 15:24:31 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-26 15:24:31 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-26 15:24:31 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-26 15:24:31 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-26 15:24:31 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-26 15:24:31 +0100
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2014-11-26 15:24:31 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-26 15:24:31 +0100
+
+
+Started POST "/users" for 127.0.0.1 at 2014-11-26 15:24:44 +0100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9XZ+AJ4Jw5Sz+qA0e4fA5ph6BHQHltHHAm6ivUXbynY=", "user"=>{"email"=>"remy.peyre05@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Envoyer"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'remy.peyre05@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered users/_form.html.erb (4.3ms)
+  Rendered users/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 184ms (Views: 178.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-26 15:24:45 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-26 15:24:45 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-26 15:24:45 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-26 15:24:45 +0100
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2014-11-26 15:24:45 +0100
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-26 15:24:45 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-26 15:24:45 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-26 15:24:45 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-26 15:24:45 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-26 15:24:45 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-26 15:24:45 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-26 15:24:45 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-26 15:24:45 +0100
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2014-11-26 15:24:45 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-26 15:24:45 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-26 15:24:45 +0100
+
+
+Started POST "/users" for 127.0.0.1 at 2014-11-26 15:24:52 +0100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9XZ+AJ4Jw5Sz+qA0e4fA5ph6BHQHltHHAm6ivUXbynY=", "user"=>{"email"=>"remy.peyre05@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Envoyer"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'remy.peyre05@gmail.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  Rendered users/_form.html.erb (4.2ms)
+  Rendered users/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 185ms (Views: 177.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-26 15:24:52 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-26 15:24:52 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-26 15:24:52 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-26 15:24:52 +0100
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2014-11-26 15:24:52 +0100
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-26 15:24:52 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-26 15:24:52 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-26 15:24:52 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-26 15:24:52 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-26 15:24:52 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-26 15:24:52 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-26 15:24:52 +0100
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2014-11-26 15:24:52 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-26 15:24:52 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-26 15:24:52 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-26 15:24:52 +0100
+
+
+Started POST "/users" for 127.0.0.1 at 2014-11-26 15:25:12 +0100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9XZ+AJ4Jw5Sz+qA0e4fA5ph6BHQHltHHAm6ivUXbynY=", "user"=>{"email"=>"amandine@hh.gfr", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Envoyer"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (1.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'amandine@hh.gfr' LIMIT 1
+Binary data inserted for `string` type on column `crypted_password`
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-11-26 14:25:12.460038"], ["crypted_password", "$2a$10$GFNIGPCqWxaL.uEhVI0UCuh06Tw.Du5COFX4I90y.TYYByxc7oEAq"], ["email", "amandine@hh.gfr"], ["salt", "UzxMPyvmzVBw7S3dUsDB"], ["updated_at", "2014-11-26 14:25:12.460038"]]
+  [1m[35m (153.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/users
+Redirected to 
+Completed 500 Internal Server Error in 611ms
+
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/users_controller.rb:31:in `block (2 levels) in create'
+  app/controllers/users_controller.rb:29:in `create'
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.4ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (32.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-11-26 15:26:31 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 183ms (Views: 181.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-26 15:26:32 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-26 15:26:32 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-26 15:26:32 +0100
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2014-11-26 15:26:32 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-26 15:26:32 +0100
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-26 15:26:32 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-26 15:26:32 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-26 15:26:32 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-26 15:26:32 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-26 15:26:32 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-26 15:26:32 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-26 15:26:32 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-26 15:26:32 +0100
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2014-11-26 15:26:32 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-26 15:26:32 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-26 15:26:32 +0100
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-26 15:27:19 +0100
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/_form.html.erb (2.5ms)
+  Rendered user_sessions/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 183ms (Views: 180.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-26 15:27:37 +0100
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/_form.html.erb (1.2ms)
+  Rendered user_sessions/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 171ms (Views: 169.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user_sessions" for 127.0.0.1 at 2014-11-26 15:27:48 +0100
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9XZ+AJ4Jw5Sz+qA0e4fA5ph6BHQHltHHAm6ivUXbynY=", "email"=>"amandine@hh.gfr", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE (email = 'amandine@hh.gfr')  ORDER BY "users"."id" ASC LIMIT 1
+Redirected to http://localhost:3000/users
+Completed 302 Found in 326ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-11-26 15:27:48 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (2.9ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3 LIMIT 1
+Completed 200 OK in 196ms (Views: 193.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-26 15:27:49 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-26 15:27:49 +0100
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2014-11-26 15:27:49 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-26 15:27:49 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-26 15:27:49 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-26 15:27:49 +0100
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-26 15:27:49 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-26 15:27:49 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-26 15:27:49 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-26 15:27:49 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-26 15:27:49 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-26 15:27:49 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-26 15:27:49 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-26 15:27:49 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-26 15:27:49 +0100
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2014-11-26 15:27:49 +0100
+
+
+Started GET "/users" for 127.0.0.1 at 2014-11-26 15:32:58 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (4.6ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3 LIMIT 1
+Completed 200 OK in 172ms (Views: 169.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-26 15:32:58 +0100
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-26 15:32:58 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-26 15:32:58 +0100
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2014-11-26 15:32:58 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-26 15:32:58 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-26 15:32:58 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-26 15:32:58 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-26 15:32:58 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-26 15:32:58 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-26 15:32:58 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-26 15:32:58 +0100
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2014-11-26 15:32:58 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-26 15:32:58 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-26 15:32:58 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-26 15:32:58 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-26 15:32:58 +0100
+
+
+Started GET "/users" for 127.0.0.1 at 2014-11-26 15:33:37 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (2.8ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3 LIMIT 1
+Completed 200 OK in 181ms (Views: 177.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-26 15:33:38 +0100
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-26 15:33:38 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-26 15:33:38 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-26 15:33:38 +0100
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2014-11-26 15:33:38 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-26 15:33:38 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-26 15:33:38 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-26 15:33:38 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-26 15:33:38 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-26 15:33:38 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-26 15:33:38 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-26 15:33:38 +0100
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2014-11-26 15:33:38 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-26 15:33:38 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-26 15:33:38 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-26 15:33:38 +0100
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-11-26 15:33:50 +0100
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (3.9ms)
+  Rendered users/new.html.erb within layouts/application (6.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3 LIMIT 1[0m
+Completed 200 OK in 181ms (Views: 179.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-11-26 15:36:13 +0100
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (2.3ms)
+  Rendered users/new.html.erb within layouts/application (3.7ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3 LIMIT 1
+Completed 200 OK in 185ms (Views: 183.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-26 15:36:14 +0100
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-26 15:36:14 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-26 15:36:14 +0100
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2014-11-26 15:36:14 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-26 15:36:14 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-26 15:36:14 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-26 15:36:14 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-26 15:36:14 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-26 15:36:14 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-26 15:36:14 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-26 15:36:14 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-26 15:36:14 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-26 15:36:14 +0100
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2014-11-26 15:36:14 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-26 15:36:14 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-26 15:36:14 +0100
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-11-26 15:37:22 +0100
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (2.4ms)
+  Rendered users/new.html.erb within layouts/application (3.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3 LIMIT 1[0m
+Completed 200 OK in 182ms (Views: 180.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-26 15:37:22 +0100
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-26 15:37:22 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-26 15:37:22 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-26 15:37:22 +0100
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2014-11-26 15:37:22 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-26 15:37:22 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-26 15:37:22 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-26 15:37:22 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-26 15:37:22 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-26 15:37:22 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-26 15:37:22 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-26 15:37:22 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-26 15:37:22 +0100
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2014-11-26 15:37:22 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-26 15:37:22 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-26 15:37:22 +0100
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-11-26 15:37:52 +0100
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (2.8ms)
+  Rendered users/new.html.erb within layouts/application (5.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3 LIMIT 1
+Completed 200 OK in 186ms (Views: 184.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-26 15:37:52 +0100
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-26 15:37:53 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-26 15:37:53 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-26 15:37:53 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-26 15:37:53 +0100
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2014-11-26 15:37:53 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-26 15:37:53 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-26 15:37:53 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-26 15:37:53 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-26 15:37:53 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-26 15:37:53 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-26 15:37:53 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-26 15:37:53 +0100
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2014-11-26 15:37:53 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-26 15:37:53 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-26 15:37:53 +0100
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-11-26 15:38:41 +0100
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (2.3ms)
+  Rendered users/new.html.erb within layouts/application (3.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3 LIMIT 1[0m
+Completed 200 OK in 192ms (Views: 190.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-26 15:38:41 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-26 15:38:41 +0100
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2014-11-26 15:38:41 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-26 15:38:41 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-26 15:38:41 +0100
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-26 15:38:41 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-26 15:38:41 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-26 15:38:41 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-26 15:38:41 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-26 15:38:41 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-26 15:38:41 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-26 15:38:41 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-26 15:38:41 +0100
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2014-11-26 15:38:41 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-26 15:38:41 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-26 15:38:41 +0100
+
+
+Started GET "/users" for 127.0.0.1 at 2014-11-26 15:38:47 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (3.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3 LIMIT 1[0m
+Completed 200 OK in 181ms (Views: 179.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-11-26 15:38:53 +0100
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (2.7ms)
+  Rendered users/new.html.erb within layouts/application (5.2ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3 LIMIT 1
+Completed 200 OK in 185ms (Views: 183.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-11-26 15:38:56 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (2.6ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3 LIMIT 1
+Completed 200 OK in 178ms (Views: 176.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/3/edit" for 127.0.0.1 at 2014-11-26 15:38:57 +0100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered users/_form.html.erb (2.7ms)
+  Rendered users/edit.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 189ms (Views: 185.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2014-11-26 15:39:02 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered users/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 172ms (Views: 169.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2014-11-26 15:40:31 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered users/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 186ms (Views: 182.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-26 15:40:31 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-26 15:40:31 +0100
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-26 15:40:31 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-26 15:40:31 +0100
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2014-11-26 15:40:31 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-26 15:40:31 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-26 15:40:31 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-26 15:40:31 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-26 15:40:31 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-26 15:40:31 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-26 15:40:31 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-26 15:40:31 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-26 15:40:31 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-26 15:40:31 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-26 15:40:31 +0100
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2014-11-26 15:40:31 +0100
+
+
+Started GET "/users" for 127.0.0.1 at 2014-11-26 15:40:35 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (2.7ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3 LIMIT 1
+Completed 200 OK in 168ms (Views: 166.7ms | ActiveRecord: 0.7ms)
