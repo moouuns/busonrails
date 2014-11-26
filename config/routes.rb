@@ -8,7 +8,9 @@ Rails.application.routes.draw do
 
   get 'parents/register' => 'users#register', :as => 'signup'
 
+  get 'parents/validation' => 'parents#validation'
 
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

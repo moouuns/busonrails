@@ -8,8 +8,13 @@
     <%= f.label "Mot de passe" %><br>
     <%= f.password_field :password %>
   </p>
+
+  <p>
+    <%= f.label "Confirmer le mot de passe" %><br>
+    <%= f.password_field :password_confirmation %>
+  </p>
  
   <p>
-    <%= f.submit %>
+    <%= f.submit "Envoyer" %>
   </p>
 <% end %>
