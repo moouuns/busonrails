@@ -1,0 +1,58 @@
+<!-- Interface parents -->
+
+<%= form_for :parents do |t| %>
+  <p>
+    <%= t.label "Nom :" %><br>
+    <%= t.text_field :nom %>
+  </p>
+ 
+  <p>
+    <%= t.label "Prénom :" %><br>
+    <%= t.text_field :prenom %>
+  </p>
+ 
+  <p>
+    <%= t.label "Adresse :" %><br>
+    <%= t.text_area :adresse %>
+  </p>
+
+  <p>
+    <%= t.label "Tél domicile :" %><br>
+    <%= t.text_field :teldom %>
+  </p>
+
+  <p>
+    <%= t.label "Tél pro :" %><br>
+    <%= t.text_field :telpro %>
+  </p>
+
+  <h1>Personne à prévenir en cas d'urgence</h1>
+
+  <p>
+    <%= t.label "Nom :" %><br>
+    <%= t.text_field :urgnom %>
+  </p>
+  
+  <p>
+    <%= t.label "Prénom :" %><br>
+    <%= t.text_field :urgprenom %>
+  </p>
+
+  <p>
+    <%= t.label "Adresse :" %><br>
+    <%= t.text_area :urgadresse %>
+  </p>
+
+  <p>
+    <%= t.label "Tél domicile :" %><br>
+    <%= t.text_field :urgteldomicile %>
+  </p>
+
+  <p>
+    <%= t.label "Tél pro :" %><br>
+    <%= t.text_field :urgtelpro %>
+  </p>
+  
+  <%= t.submit "Enregistrer" %>
+
+<% end %>

@@ -1,3 +1,31 @@
-<h1> inscription a faire </h1>
+<h1> Inscription de l'enfant </h1>
+<p>Etape 2/4</p>
+<h3>Enfant 1</h3>
 
-<p>formulaire</p>
+<%= form_for :enfant do |f| %>
+<p>
+   <%= f.label "Nom" %><br>
+   <%= f.text_field :nomenfant %>
+</p>   
+<p>
+   <%= f.label "Prénom" %><br>
+   <%= f.text_field :prenomenfant %>
+</p> 
+<p>
+   <%= f.label "Date de naissance" %><br>
+   <%= f.text_field :datenaissance %>
+</p> 
+<p>
+   <%= f.label "Ecole" %><br>
+   <%= f.text_field :ecole %>
+</p> 
+<p>
+   <%= f.label "Classe" %><br>
+   <%= f.text_field :classe %>
+</p> 
+
+<div class="actions">
+    <%= f.submit "Envoyer" %>
+</div>
+
+<%end%>
