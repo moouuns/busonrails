@@ -1,6 +1,7 @@
 class EnfantsController < ApplicationController
 
-	def redirect
-		redirect_to parents_path
+	def parents
+		redirect_to :parents
 	end
+	
 end

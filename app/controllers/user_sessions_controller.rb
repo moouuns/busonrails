@@ -7,7 +7,7 @@ class UserSessionsController < ApplicationController
 
   def create
     if @user = login(params[:email], params[:password])
-      redirect_back_or_to(:users, notice: 'Vous êtes connecté')
+      redirect_back_or_to(:enfants, notice: 'Vous êtes connecté')
     else
       flash.now[:alert] = "Erreur d'identification"
       render action: 'new'
@@ -16,6 +16,6 @@ class UserSessionsController < ApplicationController
 
   def destroy
     logout
-    redirect_to(:users, notice: 'Vous êtes déconnecté')
+    redirect_to(:index, notice: 'Vous êtes déconnecté')
   end
 end

@@ -1,7 +1,5 @@
-<div><%= image_tag("bus.jpg") %></div>
+<%= link_to image_tag("bus.jpg", :width=> 70, :height =>70 ), :action =>'index', :controller =>'index'%>
 
-<%= link_to image_tag("bus.jpg", :width=> 70, :height =>70 ), :action =>'index', :controller =>'bus'%>
-<%= link_to 'enfants' ,controller: "enfants",action:"enfants" %>
 <!--il faut changer la distination de lien-->
 
 <center><h1>Transport scolaire!</h1></center>
@@ -16,5 +14,6 @@
 		</p>
 	
 
-<%= link_to 'enfants' ,controller: "enfants",action:"enfants" %>
 </div>
+
+<%= link_to 'Créer un compte', controller: "users", action:"new" %>

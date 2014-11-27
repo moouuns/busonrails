@@ -10,6 +10,7 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
+    
   end
 
   # GET /users/new
@@ -28,7 +29,7 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
-        format.html { redirect_to :users, notice: "L'utilisateur a bien été créé." }
+        format.html { redirect_to :login, notice: "L'utilisateur a bien été créé." }
         format.json { render :show, status: :created, location: @user }
         #redirect_to(:users, notice: "L'utilisateur a bien été créé.")
       else

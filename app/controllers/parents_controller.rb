@@ -1,7 +1,6 @@
 class ParentsController < ApplicationController
-	def parents
-	end
-	
-	def new
+
+	def dashboard
+		redirect_to :dashboard
 	end
 end
