@@ -39339,3 +39339,729 @@ Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2014-11-27 15:40:
 
 
 Started GET "/assets/bus.jpg" for 127.0.0.1 at 2014-11-27 15:40:24 +0100
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-27 15:50:28 +0100
+
+ActiveRecord::NoDatabaseError (No such file or directory @ dir_s_mkdir - /home/apprenti/Bureau/busonrails2/dbRun `$ bin/rake db:create db:migrate` to create your database):
+  activerecord (4.1.7) lib/active_record/connection_adapters/sqlite3_adapter.rb:36:in `rescue in sqlite3_connection'
+  activerecord (4.1.7) lib/active_record/connection_adapters/sqlite3_adapter.rb:13:in `sqlite3_connection'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `acquire_connection'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:351:in `block in checkout'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:350:in `checkout'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:541:in `retrieve_connection'
+  activerecord (4.1.7) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.1.7) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.1.7) lib/active_record/connection_handling.rb:126:in `clear_cache!'
+  activerecord (4.1.7) lib/active_record/railtie.rb:148:in `block (3 levels) in <class:Railtie>'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:438:in `instance_exec'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:438:in `block in make_lambda'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:184:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:184:in `block in simple'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:185:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:185:in `block in simple'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.7) lib/action_dispatch/middleware/reloader.rb:83:in `prepare!'
+  actionpack (4.1.7) lib/action_dispatch/middleware/reloader.rb:71:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.4ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (13.8ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (43.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-27 15:50:28 +0100
+
+LoadError (cannot load such file -- /home/apprenti/Bureau/busonrails2/config/routes.rb):
+  activesupport (4.1.7) lib/active_support/dependencies.rb:241:in `load'
+  activesupport (4.1.7) lib/active_support/dependencies.rb:241:in `block in load'
+  activesupport (4.1.7) lib/active_support/dependencies.rb:232:in `load_dependency'
+  activesupport (4.1.7) lib/active_support/dependencies.rb:241:in `load'
+  railties (4.1.7) lib/rails/application/routes_reloader.rb:40:in `block in load_paths'
+  railties (4.1.7) lib/rails/application/routes_reloader.rb:40:in `each'
+  railties (4.1.7) lib/rails/application/routes_reloader.rb:40:in `load_paths'
+  railties (4.1.7) lib/rails/application/routes_reloader.rb:16:in `reload!'
+  railties (4.1.7) lib/rails/application/routes_reloader.rb:26:in `block in updater'
+  activesupport (4.1.7) lib/active_support/file_update_checker.rb:75:in `call'
+  activesupport (4.1.7) lib/active_support/file_update_checker.rb:75:in `execute'
+  railties (4.1.7) lib/rails/application/routes_reloader.rb:7:in `execute'
+  railties (4.1.7) lib/rails/application/finisher.rb:83:in `block (2 levels) in <module:Finisher>'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:438:in `instance_exec'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:438:in `block in make_lambda'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:184:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:184:in `block in simple'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:185:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:185:in `block in simple'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:185:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:185:in `block in simple'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:185:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:185:in `block in simple'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.7) lib/action_dispatch/middleware/reloader.rb:83:in `prepare!'
+  actionpack (4.1.7) lib/action_dispatch/middleware/reloader.rb:71:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-27 15:50:50 +0100
+
+ActiveRecord::NoDatabaseError (No such file or directory @ dir_s_mkdir - /home/apprenti/Bureau/busonrails2/dbRun `$ bin/rake db:create db:migrate` to create your database):
+  activerecord (4.1.7) lib/active_record/connection_adapters/sqlite3_adapter.rb:36:in `rescue in sqlite3_connection'
+  activerecord (4.1.7) lib/active_record/connection_adapters/sqlite3_adapter.rb:13:in `sqlite3_connection'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `acquire_connection'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:351:in `block in checkout'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:350:in `checkout'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:541:in `retrieve_connection'
+  activerecord (4.1.7) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.1.7) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.1.7) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.1.7) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.1.7) lib/active_record/query_cache.rb:32:in `call'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.7) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.6ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-27 15:50:53 +0100
+
+ActiveRecord::NoDatabaseError (No such file or directory @ dir_s_mkdir - /home/apprenti/Bureau/busonrails2/dbRun `$ bin/rake db:create db:migrate` to create your database):
+  activerecord (4.1.7) lib/active_record/connection_adapters/sqlite3_adapter.rb:36:in `rescue in sqlite3_connection'
+  activerecord (4.1.7) lib/active_record/connection_adapters/sqlite3_adapter.rb:13:in `sqlite3_connection'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `acquire_connection'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:351:in `block in checkout'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:350:in `checkout'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:541:in `retrieve_connection'
+  activerecord (4.1.7) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.1.7) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.1.7) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.1.7) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.1.7) lib/active_record/query_cache.rb:32:in `call'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.7) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/apprenti/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/apprenti/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (30.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-27 15:52:27 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by IndexController#index as HTML
+  Rendered index/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 332ms (Views: 307.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-27 15:52:27 +0100
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-11-27 15:52:27 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-27 15:52:27 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-27 15:52:27 +0100
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-27 15:52:27 +0100
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2014-11-27 15:52:27 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-27 15:52:27 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-27 15:52:27 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-27 15:52:27 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-27 15:52:27 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-27 15:52:27 +0100
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-11-27 15:52:28 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-27 15:52:28 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-27 15:52:28 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-27 15:52:28 +0100
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2014-11-27 15:52:28 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-27 15:52:28 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-27 15:52:28 +0100
+
+
+Started GET "/assets/bus.jpg" for 127.0.0.1 at 2014-11-27 15:52:28 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateParents (20141127171304)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "parents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nom" varchar(255), "prenom" varchar(255), "adresse" text, "teldom" varchar(255), "telpro" varchar(255), "urgnom" varchar(255), "urgprenom" varchar(255), "urgtel" varchar(255), "urgadresse" text, "urgteldom" varchar(255), "urgtelpro" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141127171304"]]
+  [1m[36m (140.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-27 18:18:07 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by IndexController#index as HTML
+  Rendered index/index.html.erb within layouts/application (32.6ms)
+Completed 200 OK in 656ms (Views: 621.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2014-11-27 18:18:08 +0100
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:08 +0100
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-27 18:18:08 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-27 18:18:08 +0100
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-27 18:18:08 +0100
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2014-11-27 18:18:08 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:08 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:08 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-27 18:18:08 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-27 18:18:08 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-27 18:18:08 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:08 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:08 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:08 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:08 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:08 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:08 +0100
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:08 +0100
+
+
+Started GET "/assets/bus.jpg" for 127.0.0.1 at 2014-11-27 18:18:08 +0100
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-11-27 18:18:13 +0100
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (52.9ms)
+  Rendered users/new.html.erb within layouts/application (76.4ms)
+Completed 200 OK in 381ms (Views: 278.5ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-11-27 18:18:34 +0100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Pf7n8kyyi2j4zGlsk+oHE4upXj0Its/4AbHXCQ4A0NY=", "user"=>{"email"=>"z@z.fr", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Créer un compte"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'z@z.fr' LIMIT 1[0m
+Binary data inserted for `string` type on column `crypted_password`
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "users" ("created_at", "crypted_password", "email", "salt", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-11-27 17:18:35.046817"], ["crypted_password", "$2a$10$gj6pWkZeoqkU.v37hFVQjeFB2WZ2iOQ6R4XoFPK75y7liIqPJ4wva"], ["email", "z@z.fr"], ["salt", "S3KrmXawL8U5wuvhNYdX"], ["updated_at", "2014-11-27 17:18:35.046817"]]
+  [1m[36m (146.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/login
+Completed 302 Found in 785ms (ActiveRecord: 147.1ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-11-27 18:18:35 +0100
+Processing by UserSessionsController#new as HTML
+  Rendered user_sessions/_form.html.erb (3.6ms)
+  Rendered user_sessions/new.html.erb within layouts/application (21.8ms)
+Completed 200 OK in 237ms (Views: 234.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-27 18:18:35 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-27 18:18:35 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-27 18:18:35 +0100
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2014-11-27 18:18:35 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-27 18:18:35 +0100
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-27 18:18:35 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-27 18:18:35 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:35 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:35 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:35 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:35 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:35 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:35 +0100
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:35 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:35 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:35 +0100
+
+
+Started POST "/user_sessions" for 127.0.0.1 at 2014-11-27 18:18:39 +0100
+Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Pf7n8kyyi2j4zGlsk+oHE4upXj0Its/4AbHXCQ4A0NY=", "email"=>"a@a.fr", "password"=>"[FILTERED]", "commit"=>"Connexion"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE (email = 'a@a.fr')  ORDER BY "users"."id" ASC LIMIT 1
+Redirected to http://localhost:3000/enfants
+Completed 302 Found in 328ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/enfants" for 127.0.0.1 at 2014-11-27 18:18:40 +0100
+Processing by EnfantsController#enfants as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 6 LIMIT 1[0m
+  Rendered enfants/enfants.html.erb within layouts/application (88.5ms)
+Completed 200 OK in 334ms (Views: 293.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-27 18:18:40 +0100
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-27 18:18:40 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-27 18:18:40 +0100
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2014-11-27 18:18:40 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:40 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-27 18:18:40 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:40 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-27 18:18:40 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-27 18:18:40 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:40 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:40 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:40 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:40 +0100
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:40 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:40 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:40 +0100
+
+
+Started POST "/enfants" for 127.0.0.1 at 2014-11-27 18:18:44 +0100
+Processing by EnfantsController#parents as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Pf7n8kyyi2j4zGlsk+oHE4upXj0Its/4AbHXCQ4A0NY=", "enfant"=>{"nomenfant"=>"", "prenomenfant"=>"", "datenaissance"=>"", "ecole"=>"", "classe"=>""}, "commit"=>"Envoyer"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 6 LIMIT 1
+Redirected to http://localhost:3000/parents
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/parents" for 127.0.0.1 at 2014-11-27 18:18:44 +0100
+Processing by ParentsController#parents as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 6 LIMIT 1[0m
+  Rendered parents/_validation.html.erb (25.9ms)
+  Rendered parents/parents.html.erb within layouts/application (41.7ms)
+Completed 200 OK in 249ms (Views: 244.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-27 18:18:45 +0100
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-27 18:18:45 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-27 18:18:45 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-27 18:18:45 +0100
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2014-11-27 18:18:45 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-27 18:18:45 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-27 18:18:45 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:45 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:45 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:45 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:45 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:45 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:45 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:45 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:45 +0100
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:45 +0100
+
+
+Started POST "/parents" for 127.0.0.1 at 2014-11-27 18:18:48 +0100
+Processing by ParentsController#dashboard as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Pf7n8kyyi2j4zGlsk+oHE4upXj0Its/4AbHXCQ4A0NY=", "parents"=>{"nom"=>"", "prenom"=>"", "adresse"=>"", "teldom"=>"", "telpro"=>"", "urgnom"=>"", "urgprenom"=>"", "urgadresse"=>"", "urgteldomicile"=>"", "urgtelpro"=>""}, "commit"=>"Enregistrer"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 6 LIMIT 1
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2014-11-27 18:18:48 +0100
+Processing by DashboardController#dashboard as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 6 LIMIT 1[0m
+  Rendered dashboard/dashboard.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 231ms (Views: 227.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-27 18:18:48 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:48 +0100
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-27 18:18:48 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-27 18:18:48 +0100
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2014-11-27 18:18:48 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-27 18:18:48 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-27 18:18:48 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:48 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-27 18:18:48 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:48 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:48 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:48 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:48 +0100
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:48 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:48 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:48 +0100
+
+
+Started POST "/logout" for 127.0.0.1 at 2014-11-27 18:18:52 +0100
+Processing by UserSessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Pf7n8kyyi2j4zGlsk+oHE4upXj0Its/4AbHXCQ4A0NY="}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 6 LIMIT 1
+Redirected to http://localhost:3000/index
+Completed 302 Found in 6ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2014-11-27 18:18:52 +0100
+Processing by IndexController#index as HTML
+  Rendered index/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 202ms (Views: 200.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bus.css?body=1" for 127.0.0.1 at 2014-11-27 18:18:52 +0100
+
+
+Started GET "/assets/register.css?body=1" for 127.0.0.1 at 2014-11-27 18:18:52 +0100
+
+
+Started GET "/assets/user_sessions.css?body=1" for 127.0.0.1 at 2014-11-27 18:18:52 +0100
+
+
+Started GET "/assets/enfants.css?body=1" for 127.0.0.1 at 2014-11-27 18:18:52 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-11-27 18:18:52 +0100
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-27 18:18:52 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-27 18:18:52 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:52 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:52 +0100
+
+
+Started GET "/assets/enfants.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:52 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:52 +0100
+
+
+Started GET "/assets/bus.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:52 +0100
+
+
+Started GET "/assets/register.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:52 +0100
+
+
+Started GET "/assets/user_sessions.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:52 +0100
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:52 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-27 18:18:52 +0100
+
+
+Started GET "/assets/bus.jpg" for 127.0.0.1 at 2014-11-27 18:18:52 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateEnfants (20141127172153)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "enfants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nomenfant" varchar(255), "prenomenfant" varchar(255), "datenaissance" varchar(255), "ecole" varchar(255), "classe" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141127172153"]]
+  [1m[36m (153.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m

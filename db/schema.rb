@@ -11,7 +11,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141124135528) do
+ActiveRecord::Schema.define(version: 20141127172153) do
+
+  create_table "enfants", force: true do |t|
+    t.string   "nomenfant"
+    t.string   "prenomenfant"
+    t.string   "datenaissance"
+    t.string   "ecole"
+    t.string   "classe"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "parents", force: true do |t|
+    t.string   "nom"
+    t.string   "prenom"
+    t.text     "adresse"
+    t.string   "teldom"
+    t.string   "telpro"
+    t.string   "urgnom"
+    t.string   "urgprenom"
+    t.string   "urgtel"
+    t.text     "urgadresse"
+    t.string   "urgteldom"
+    t.string   "urgtelpro"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.string   "email",            null: false
