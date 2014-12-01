@@ -1,6 +1,6 @@
 <!-- Interface parents -->
 
-<%= form_for :parents do |t| %>
+<%= form_for @parent do |t| %>
   <p>
     <%= t.label "Nom :" %><br>
     <%= t.text_field :nom %>
@@ -45,7 +45,7 @@
 
   <p>
     <%= t.label "Tél domicile :" %><br>
-    <%= t.text_field :urgteldomicile %>
+    <%= t.text_field :urgteldom %>
   </p>
 
   <p>

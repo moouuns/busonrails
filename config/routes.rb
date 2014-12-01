@@ -3,14 +3,8 @@ Rails.application.routes.draw do
   root 'index#index'
 
   get 'index' => 'index'
-  
-  get 'user_sessions/new'
-
-  get 'user_sessions/create'
-
-  get 'user_sessions/destroy'
-
-  resources :users
+  resources :parents
+  resources :enfants
 
   get 'enfants' => 'enfants#enfants'
   post 'enfants' => 'enfants#parents'

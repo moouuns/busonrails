@@ -7,7 +7,7 @@ class UserSessionsController < ApplicationController
 
   def create
     if @user = login(params[:email], params[:password])
-      redirect_back_or_to(:enfants, notice: 'Vous êtes connecté')
+      redirect_back_or_to(new_enfant_path, notice: 'Vous êtes connecté')
     else
       flash.now[:alert] = "Erreur d'identification"
       render action: 'new'

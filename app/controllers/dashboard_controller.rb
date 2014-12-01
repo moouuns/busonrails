@@ -1,5 +1,5 @@
-class DashboardController < ApplicationController
+# class DashboardController < ApplicationController
 
-	def dashboard
-	end
-end
+# 	def dashboard
+# 	end
+# end

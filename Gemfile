@@ -46,3 +46,4 @@ gem 'spring',        group: :development
 
 #gem pourt le log in 
 gem 'sorcery'
+gem 'pry'
