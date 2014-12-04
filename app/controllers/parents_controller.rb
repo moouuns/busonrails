@@ -2,20 +2,19 @@ class ParentsController < ApplicationController
 
 	def show
 		#redirect_to :dashboard
-    @parent = Parent.find(params[:id])
     @parent = current_user.parent
 
     # @enfants = # passer par current_user
 	end
 
   def new
-    # renvoie le formulaire enfant
-    @parent = Parent.new
+    # renvoie le formulaire parent
+    @parent = current_user.build_parent
   end
 
   def create
     # créer un ENfant ds la BDD à partir du formulaire
-    @parent = Parent.new(parent_params)
+    @parent = current_user.build_parent(parent_params)
     if @parent.save
       redirect_to parent_path(@parent.id)
     else
