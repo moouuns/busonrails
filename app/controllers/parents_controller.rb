@@ -2,7 +2,11 @@ class ParentsController < ApplicationController
 
 	def show
     @parent = current_user.parent
-    @enfants = current_user.enfants
+    if @parent.id == params[:id].to_i
+      @enfants = current_user.enfants
+    else
+      redirect_to root_path
+    end
 	end
 
   def new
