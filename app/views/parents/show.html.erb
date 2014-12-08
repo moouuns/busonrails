@@ -18,3 +18,10 @@
 <% end %>
 
 <p>Coordonnées parent</p>
+<ul>
+    <li><%= @parent.nom %></li>
+    <li><%= @parent.prenom %></li>
+    <li><%= @parent.adresse %></li>
+</ul>
+
+ <%= link_to "Modifier les coordonnées", edit_parent_path(@parent.id) %>

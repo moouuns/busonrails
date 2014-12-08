@@ -24,13 +24,22 @@ class ParentsController < ApplicationController
   end
 
   def edit
-    # renvoie vers le formulaire de modification
+    @parent = Parent.find(params[:id])
+    redirect_to parent_path(current_user)if @parent != current_user.parent 
+
+    
   end
 
   def update
-    # met à jour un enfant spécifique avec les données du formulaire edit
+    @parent = Parent.find(params[:id])
+    redirect_to parent_path(current_user)if @parent != current_user.parent 
+    if @parent.update(parent_params)
+      redirect_to parent_path(current_user.parent.id)
+    else
+      redirect_to edit_parent_path(@parent)
+    end
   end
-
+  
   private
 
   def parent_params
