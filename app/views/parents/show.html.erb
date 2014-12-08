@@ -2,4 +2,17 @@
 
 <p>Bonjour <%= @parent.prenom %></p>
 
-<%= current_user.email %>
+<p>Liste des enfants</p>
+
+<% @enfants.each do |enfant| %>
+  <ul>
+    <li><%= enfant.prenomenfant %></li>
+    <li><%= enfant.nomenfant  %></li>
+    <li><%= enfant.datenaissance %></li>
+    <li><%= enfant.ecole  %></li>
+    <li><%= enfant.classe %></li>
+  </ul>
+
+<% end %>
+
+<p>Coordonnées parent</p>

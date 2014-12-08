@@ -1,4 +1,3 @@
-# app/controllers/user_sessions_controller.rb
 class UserSessionsController < ApplicationController
   skip_before_filter :require_login, except: [:destroy]
   def new
@@ -7,7 +6,14 @@ class UserSessionsController < ApplicationController
 
   def create
     if @user = login(params[:email], params[:password])
-      redirect_back_or_to(new_enfant_path, notice: 'Vous êtes connecté')
+      if @user.enfants.count == 0
+        redirect_back_or_to(new_enfant_path, notice: 'Vous êtes connecté')
+      elsif @user.parent.count == 0
+        redirect_back_or_to(new_parent_path, notice: 'Vous êtes connecté')
+      else 
+        redirect_back_or_to(parent_path(@user.parent.id), notice: 'Vous êtes connecté')
+      end
+        
     else
       flash.now[:alert] = "Erreur d'identification"
       render action: 'new'
@@ -16,6 +22,6 @@ class UserSessionsController < ApplicationController
 
   def destroy
     logout
-    redirect_to(:index, notice: 'Vous êtes déconnecté')
+    redirect_to(root_path, notice: 'Vous êtes déconnecté')
   end
 end
