@@ -17,11 +17,17 @@ class EnfantsController < ApplicationController
   end
 
   def edit
-    # renvoie vers le formulaire de modification
+    @enfant = Enfant.find(params[:id])
+
   end
 
   def update
-    # met à jour un enfant spécifique avec les données du formulaire edit
+    @enfant = Enfant.find(params[:id])
+    if @enfant.update(enfant_params)
+      redirect_to parent_path(current_user.parent.id)
+    else
+      redirect_to edit_enfant_path(@enfant)
+    end
   end
 
   private
