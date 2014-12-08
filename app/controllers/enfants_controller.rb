@@ -26,11 +26,15 @@ class EnfantsController < ApplicationController
 
   def update
     @enfant = Enfant.find(params[:id])
-    if @enfant.update(enfant_params)
-      redirect_to parent_path(current_user.parent.id)
+   if  current_user.enfants.include?(@enfant)
+      if @enfant.update(enfant_params)
+        redirect_to parent_path(current_user.parent.id)
+      else
+        redirect_to edit_enfant_path(@enfant)
+      end
     else
-      redirect_to edit_enfant_path(@enfant)
-    end
+       redirect_to parent_path(current_user)
+    end 
   end
 
   private
