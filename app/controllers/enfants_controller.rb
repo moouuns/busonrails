@@ -18,7 +18,10 @@ class EnfantsController < ApplicationController
 
   def edit
     @enfant = Enfant.find(params[:id])
-
+    if current_user.enfants.include?(@enfant)
+    else
+       redirect_to parent_path(current_user)
+    end
   end
 
   def update
