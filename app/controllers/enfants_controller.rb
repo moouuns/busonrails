@@ -1,5 +1,10 @@
 class EnfantsController < ApplicationController
 
+  def check_id
+    if @enfant = enfant.find(params[:id])
+      redirect_to enfant_path
+  end
+
   def new
     # renvoie le formulaire enfant
     @enfant = Enfant.new
@@ -12,6 +17,7 @@ class EnfantsController < ApplicationController
 
   def edit
     # renvoie vers le formulaire de modification
+
   end
 
   def update
