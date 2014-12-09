@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
-
+  
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-  root 'index#index'
+  root 'pages#accueil'
 
-  root 'static#accueil'
+  get 'accueil' => "pages#accueil"
 
   resources :parents
 
