@@ -1,32 +1,17 @@
 Rails.application.routes.draw do
-  
+
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   root 'index#index'
 
-  get 'index' => 'index'
+  root 'static#accueil'
+
   resources :parents
+
   resources :enfants
 
-  get 'enfants' => 'enfants#enfants'
-  post 'enfants' => 'enfants#parents'
-
-  get 'parents' => 'parents'
-
-  get 'parents/register' => 'users#register', :as => 'signup'
-
-  get 'parents/validation' => 'parents#validation'
-
-  get 'dashboard' => 'dashboard#dashboard'
-  post 'parents' => 'parents#dashboard'
-
-
-# gem sorcery
   resources :user_sessions
+
   resources :users
-
-  get 'login' => 'user_sessions#new', :as => :login
-
-  post 'logout' => 'user_sessions#destroy', :as => :logout 
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

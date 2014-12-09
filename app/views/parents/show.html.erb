@@ -2,4 +2,26 @@
 
 <p>Bonjour <%= @parent.prenom %></p>
 
-<%= current_user.email %>
+<p>Liste des enfants</p>
+
+<% @enfants.each do |enfant| %>
+  <ul>
+    <li><%= enfant.prenomenfant %></li>
+    <li><%= enfant.nomenfant  %></li>
+    <li><%= enfant.datenaissance %></li>
+    <li><%= enfant.ecole  %></li>
+    <li><%= enfant.classe %></li>
+  </ul>
+
+  <%= link_to "Modifier les informations", edit_enfant_path(enfant.id) %>
+
+<% end %>
+
+<p>Coordonnées parent</p>
+<ul>
+    <li><%= @parent.nom %></li>
+    <li><%= @parent.prenom %></li>
+    <li><%= @parent.adresse %></li>
+</ul>
+
+ <%= link_to "Modifier les coordonnées", edit_parent_path(@parent.id) %>

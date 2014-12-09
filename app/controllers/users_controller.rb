@@ -29,7 +29,8 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
-        format.html { redirect_to :login, notice: "L'utilisateur a bien été créé." }
+        current_user = @user
+        format.html { redirect_to new_enfant_path, notice: "L'utilisateur a bien été créé." }
         format.json { render :show, status: :created, location: @user }
         #redirect_to(:users, notice: "L'utilisateur a bien été créé.")
       else
