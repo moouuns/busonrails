@@ -2,5 +2,4 @@
 
 <%= render 'form' %>
 
-<%= link_to 'Voir', @user %> |
-<%= link_to 'Retour', users_path %>
+<%= link_to 'Annuler', user_session_path(current_user.id) %>

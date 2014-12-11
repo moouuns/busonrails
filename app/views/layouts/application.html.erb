@@ -9,7 +9,6 @@
 <body>
  <div id="nav">
     <% if current_user %>
-      <%= link_to "Editer le profil", edit_user_path(current_user.id) %>
       <%= link_to "Déconnexion", user_session_path(current_user.id), method: :delete %>
     <% else %>
       <%= link_to "S'enregistrer", new_user_path %> |
