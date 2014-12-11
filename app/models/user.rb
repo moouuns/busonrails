@@ -8,4 +8,9 @@ class User < ActiveRecord::Base
   validates :password_confirmation, presence: true
 
   validates :email, uniqueness: true
+
+  def is_admin?
+  	admin
+  end
+
 end
