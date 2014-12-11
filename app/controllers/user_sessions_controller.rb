@@ -6,7 +6,9 @@ class UserSessionsController < ApplicationController
 
   def create
     if @user = login(params[:email], params[:password])
-      if @user.enfants.count == 0
+      if @user.is_admin?        
+        redirect_to rails_admin_path 
+      elsif @user.enfants.count == 0
         redirect_back_or_to(new_enfant_path, notice: 'Vous êtes connecté')
       elsif @user.parent
         redirect_back_or_to(parent_path(@user.parent.id), notice: 'Vous êtes connecté')
