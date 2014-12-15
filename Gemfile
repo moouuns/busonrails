@@ -44,6 +44,6 @@ gem 'spring',        group: :development
 
 
 
-#gem pourt le log in 
+#gem pour le log in 
 gem 'sorcery'
 gem 'pry'
